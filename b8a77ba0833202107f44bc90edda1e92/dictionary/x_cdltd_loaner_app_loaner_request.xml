@@ -1,3 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="aa8affec833202107f44bc90edda1eb4" extends="task" label="Loaner request" max_length="40" name="x_cdltd_loaner_app_loaner_request" type="collection"/>
+    <element db_object_id="aa8affec833202107f44bc90edda1eb4" extends="task" label="Loaner request" max_length="40" name="x_cdltd_loaner_app_loaner_request" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Addtional Comments" max_length="4000" name="u_ac" type="journal"/>
+        <element attributes="encode_utf8=false" label="Assignment group" max_length="32" name="u_assignment_group" reference="cmdb_multisource_deny_class" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Depot" max_length="40" name="u_depot" type="string">
+            <choice>
+                <element inactive_on_update="false" label="New york" sequence="0" value="ny"/>
+                <element inactive_on_update="false" label="London" sequence="1" value="london"/>
+                <element inactive_on_update="false" label="Buenos aires" sequence="2" value="ba"/>
+                <element inactive_on_update="false" label="Santa clora" sequence="3" value="sc"/>
+                <element inactive_on_update="false" label="Singapore" sequence="4" value="singapore"/>
+                <element inactive_on_update="false" label="Sydney" sequence="5" value="sydney"/>
+                <element inactive_on_update="false" label="Other" sequence="6" value="other"/>
+            </choice>
+        </element>
+        <element label="New Due Date" max_length="40" name="u_due_date_2" type="due_date"/>
+        <element attributes="edge_encryption_enabled=true" label="End date" mandatory="true" max_length="40" name="u_end_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="New Date/Time" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="cmdb_ci_computer" label="Item type" max_length="40" name="u_item_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Laptop" sequence="0" value="cmdb_ci_computer"/>
+                <element inactive_on_update="false" label="Mobile phone" sequence="1" value="cmdb_ci_mobile_device"/>
+                <element inactive_on_update="false" label="Projector" sequence="2" value="cmdb_ci_projector"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="New Journal" max_length="4000" name="u_journal_3" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Start date" mandatory="true" max_length="40" name="u_start_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Location to be used" max_length="40" name="u_string_5" type="string"/>
+    </element>
 </database>
