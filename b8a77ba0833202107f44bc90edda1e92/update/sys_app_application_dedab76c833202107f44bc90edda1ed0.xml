@@ -7,22 +7,22 @@
         <hint/>
         <name/>
         <order/>
-        <roles>x_cdltd_loaner_app.loaner_request_user</roles>
+        <roles>x_cdltd_loaner_app.loaner_request_user,x_cdltd_loaner_app.admin</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-06-12 04:53:17</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dedab76c833202107f44bc90edda1ed0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Loaner application</sys_name>
         <sys_overrides/>
         <sys_package display_value="Loaner application" source="x_cdltd_loaner_app">b8a77ba0833202107f44bc90edda1e92</sys_package>
         <sys_policy/>
         <sys_scope display_value="Loaner application">b8a77ba0833202107f44bc90edda1e92</sys_scope>
         <sys_update_name>sys_app_application_dedab76c833202107f44bc90edda1ed0</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-12 04:53:17</sys_updated_on>
+        <sys_updated_by>fred.luddy</sys_updated_by>
+        <sys_updated_on>2024-06-13 10:35:05</sys_updated_on>
         <title>Loaner application</title>
         <view_name/>
     </sys_app_application>
